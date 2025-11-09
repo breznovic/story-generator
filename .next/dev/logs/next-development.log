@@ -1,0 +1,179 @@
+[00:00:01.671] Server  LOG     It looks like you're trying to use TypeScript but do not have the required package(s) installed.
+Installing dependencies
+
+If you are not trying to use TypeScript, please remove the tsconfig.json file from your package root (and any TypeScript files in your app and pages directories).
+
+[00:00:01.725] Server  LOG     
+[00:00:01.725] Server  LOG     Installing devDependencies (pnpm):
+[00:00:01.726] Server  LOG     - typescript
+[00:00:01.726] Server  LOG     - @types/node
+[00:00:01.727] Server  LOG     
+[00:00:08.678] Server  LOG     
+[00:00:08.694] Server  LOG     
+[00:00:08.694] Server  LOG        We detected TypeScript in your project and created a tsconfig.json file for you.
+[00:00:09.122] Server  LOG      ✓ Ready in 8.6s
+[00:00:23.912] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:58.681] Browser ERROR   Failed to generate story: {"error":"TypeError: Failed to fetch","status":"FETCH_ERROR"}
+[00:01:15.362] Browser ERROR   Failed to generate story: {"error":"TypeError: Failed to fetch","status":"FETCH_ERROR"}
+[00:05:16.867] Server  LOG      ✓ Compiled in 28ms
+[00:05:42.287] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:45.946] Browser ERROR   Failed to generate story: {"error":"TypeError: Failed to fetch","status":"FETCH_ERROR"}
+[00:05:48.165] Browser ERROR   Failed to generate story: {"error":"TypeError: Failed to fetch","status":"FETCH_ERROR"}
+[00:05:50.327] Browser ERROR   Failed to generate story: {"error":"TypeError: Failed to fetch","status":"FETCH_ERROR"}
+[00:05:51.041] Browser ERROR   Failed to generate story: {"error":"TypeError: Failed to fetch","status":"FETCH_ERROR"}
+[00:05:51.739] Browser ERROR   Failed to generate story: {"error":"TypeError: Failed to fetch","status":"FETCH_ERROR"}
+[00:05:52.430] Browser ERROR   Failed to generate story: {"error":"TypeError: Failed to fetch","status":"FETCH_ERROR"}
+[00:05:55.129] Browser ERROR   Failed to generate story: {"error":"TypeError: Failed to fetch","status":"FETCH_ERROR"}
+[00:05:56.177] Browser ERROR   Failed to generate story: {"error":"TypeError: Failed to fetch","status":"FETCH_ERROR"}
+[00:05:56.815] Browser ERROR   Failed to generate story: {"error":"TypeError: Failed to fetch","status":"FETCH_ERROR"}
+[00:06:01.811] Browser ERROR   Failed to generate story: {"error":"TypeError: Failed to fetch","status":"FETCH_ERROR"}
+[00:10:06.522] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:07.755] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:10.310] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:37.109] Server  LOG      ✓ Compiled in 1266ms
+[00:12:14.187] Server  LOG      ✓ Compiled in 21ms
+[00:12:29.661] Server  LOG      ✓ Compiled in 6ms
+[00:12:32.837] Browser ERROR   Failed to generate story: {"error":"TypeError: Failed to fetch","status":"FETCH_ERROR"}
+[00:12:41.383] Server  LOG      ✓ Compiled in 8ms
+[00:12:53.583] Server  LOG      ✓ Compiled in 17ms
+[00:12:57.517] Server  LOG      ✓ Compiled in 9ms
+[00:13:12.282] Server  LOG      ✓ Compiled in 5ms
+[00:13:20.413] Server  LOG      ✓ Compiled in 7ms
+[00:13:31.848] Server  LOG      ✓ Compiled in 6ms
+[00:13:35.741] Server  LOG      ✓ Compiled in 10ms
+[00:13:50.023] Server  LOG      ✓ Compiled in 13ms
+[00:14:39.017] Server  LOG      ✓ Compiled in 6ms
+[00:14:48.173] Server  LOG      ✓ Compiled in 6ms
+[00:15:12.859] Server  LOG      ✓ Compiled in 14ms
+[00:15:15.583] Server  LOG      ✓ Compiled in 12ms
+[00:15:20.654] Server  LOG      ✓ Compiled in 25ms
+[00:15:22.930] Server  LOG      ✓ Compiled in 8ms
+[00:15:27.308] Server  LOG      ✓ Compiled in 5ms
+[00:15:38.042] Browser ERROR   Failed to generate story: {"error":"TypeError: Failed to fetch","status":"FETCH_ERROR"}
+[00:15:48.609] Server  LOG      ✓ Compiled in 9ms
+[00:16:01.466] Server  LOG      ✓ Compiled in 5ms
+[00:16:07.900] Server  LOG      ✓ Compiled in 11ms
+[00:16:23.259] Server  LOG      ✓ Compiled in 10ms
+[00:16:26.410] Server  LOG      ✓ Compiled in 9ms
+[00:16:38.625] Server  LOG      ✓ Compiled in 23ms
+[00:16:48.037] Browser ERROR   Failed to generate story: {"error":"TypeError: Failed to fetch","status":"FETCH_ERROR"}
+[00:17:46.644] Browser ERROR   Failed to generate story: {"error":"TypeError: Failed to fetch","status":"FETCH_ERROR"}
+[00:27:10.171] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:29.041] Server  LOG      ✓ Compiled in 8ms
+[00:32:32.012] Server  LOG      ✓ Compiled in 12ms
+[00:33:51.452] Server  LOG      ✓ Compiled in 23ms
+[00:33:59.050] Server  LOG      ✓ Compiled in 11ms
+[00:34:05.967] Server  LOG      ✓ Compiled in 11ms
+[00:34:07.316] Server  LOG      ✓ Compiled in 6ms
+[00:34:11.100] Server  LOG      ✓ Compiled in 9ms
+[00:34:12.471] Server  LOG      ✓ Compiled in 14ms
+[00:34:13.939] Server  LOG      ✓ Compiled in 21ms
+[00:34:22.420] Server  LOG      ✓ Compiled in 20ms
+[00:35:14.171] Server  LOG      ✓ Compiled in 23ms
+[00:35:17.805] Server  LOG      ✓ Compiled in 5ms
+[00:35:50.717] Server  LOG      ✓ Compiled in 14ms
+[00:35:53.604] Server  LOG      ✓ Compiled in 4ms
+[00:36:06.596] Server  LOG      ✓ Compiled in 9ms
+[00:36:09.922] Server  LOG      ✓ Compiled in 4ms
+[00:36:15.875] Server  LOG      ✓ Compiled in 29ms
+[00:36:19.995] Server  LOG      ✓ Compiled in 16ms
+[00:37:41.428] Server  LOG      ✓ Compiled in 10ms
+[00:37:44.676] Server  LOG      ✓ Compiled in 9ms
+[00:37:46.093] Server  LOG      ✓ Compiled in 17ms
+[00:37:53.203] Server  LOG      ✓ Compiled in 7ms
+[00:38:14.871] Server  LOG      ✓ Compiled in 11ms
+[00:38:19.456] Server  LOG      ✓ Compiled in 14ms
+[00:38:25.622] Server  LOG      ✓ Compiled in 71ms
+[00:38:27.172] Server  LOG      ✓ Compiled in 5ms
+[00:38:31.869] Server  LOG      ✓ Compiled in 10ms
+[00:39:12.824] Server  LOG      ✓ Compiled in 14ms
+[00:39:17.757] Server  LOG      ✓ Compiled in 14ms
+[00:39:24.418] Server  LOG      ✓ Compiled in 17ms
+[00:39:38.263] Server  LOG      ✓ Compiled in 7ms
+[00:39:51.280] Server  LOG      ✓ Compiled in 8ms
+[00:39:52.618] Server  LOG      ✓ Compiled in 7ms
+[00:40:08.112] Server  LOG      ✓ Compiled in 17ms
+[00:40:30.554] Server  LOG      ✓ Compiled in 15ms
+[00:40:39.297] Server  LOG      ✓ Compiled in 12ms
+[00:40:43.368] Server  LOG      ✓ Compiled in 7ms
+[00:40:44.936] Server  LOG      ✓ Compiled in 20ms
+[00:41:14.938] Server  LOG      ✓ Compiled in 10ms
+[00:41:17.623] Server  LOG      ✓ Compiled in 9ms
+[00:42:21.506] Server  LOG      ✓ Compiled in 15ms
+[00:42:24.396] Server  LOG      ✓ Compiled in 10ms
+[00:42:27.567] Server  LOG      ✓ Compiled in 16ms
+[00:42:32.445] Server  LOG      ✓ Compiled in 8ms
+[00:42:37.629] Server  LOG      ✓ Compiled in 9ms
+[00:42:41.552] Server  LOG      ✓ Compiled in 10ms
+[00:42:46.017] Server  LOG      ✓ Compiled in 27ms
+[00:42:49.597] Server  LOG      ✓ Compiled in 23ms
+[00:45:45.280] Server  LOG      ✓ Compiled in 33ms
+[00:45:46.389] Browser ERROR   ./components/StoryGenerator.tsx:51:9
+Ecmascript file had an error
+  49 |
+  50 |
+> 51 |   const handleSubmit = async (e: React.FormEvent) => {
+     |         ^^^^^^^^^^^^
+  52 |   e.preventDefault();
+  53 |
+  54 |   try {
+
+the name `handleSubmit` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./components/StoryGenerator.tsx
+    ./app/page.tsx
+[00:46:04.832] Server  LOG      ✓ Compiled in 13ms
+[00:46:05.390] Browser ERROR   ./components/StoryGenerator.tsx:51:9
+Ecmascript file had an error
+  49 |
+  50 |
+> 51 |   const handleSubmit = async (e: React.FormEvent) => {
+     |         ^^^^^^^^^^^^
+  52 |   e.preventDefault();
+  53 |
+  54 |   try {
+
+the name `handleSubmit` is defined multiple times
+
+Import trace:
+  Server Component:
+    ./components/StoryGenerator.tsx
+    ./app/page.tsx
+[00:50:34.612] Server  ERROR    ⨯ ReferenceError: Navigation is not defined
+[00:50:35.423] Browser ERROR   uncaughtError: ReferenceError: Navigation is not defined
+[00:51:25.114] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:51:25.116] Server  LOG      ✓ Compiled in 400ms
+[00:51:25.129] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:51:25.857] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:51:51.100] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:52:58.380] Server  LOG      ✓ Compiled in 119ms
+[00:52:59.244] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:53:25.376] Browser ERROR   ./app/page.tsx:21:24
+Parsing ecmascript source code failed
+  19 |       </div>
+  20 |
+> 21 |       <StoryGenerator />
+     |                        ^
+  22 |     </div>
+  23 |   );
+  24 | }
+
+Expression expected
+[00:53:32.384] Browser ERROR   ./app/page.tsx:22:24
+Parsing ecmascript source code failed
+  20 |       </div>
+  21 |
+> 22 |       <StoryGenerator />
+     |                        ^
+  23 |     </div>
+  24 |   );
+  25 | }
+
+Expression expected
+[00:53:44.640] Server  LOG      ✓ Compiled in 130ms
+[00:53:46.121] Server  LOG      ✓ Compiled in 10ms
+[00:53:49.007] Server  LOG      ✓ Compiled in 25ms
+[00:54:32.347] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:20:44.089] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

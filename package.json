@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/next/package.json",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.10.1",
+    "next": "^16.0.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-redux": "^9.2.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.0",
+    "@types/react": "^19.2.2",
+    "typescript": "5.9.3"
+  }
+}
