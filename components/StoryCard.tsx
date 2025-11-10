@@ -13,7 +13,7 @@ export default function StoryCard({ story }: StoryCardProps) {
           {new Date(story.created_at).toLocaleDateString()}
         </span>
       </div>
-      <p className="story-content">{story.story}</p>
+      <p className="story-content">{story.story_text}</p>
     </div>
   );
 }

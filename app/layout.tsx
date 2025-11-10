@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./../styles/globals.css";
 import StoreProvider from "./providers";
-import Navigation from "../components/Navigation";
+import FloatingActionButton from "../components/FloatingActionButton";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,14 +28,17 @@ export default function RootLayout({
             <header className="header">
               <div className="container">
                 <div className="header-content">
-                  <h1>🏰 Medieval Stories</h1>
-                  <p>Generate tales from the Middle Ages</p>
+                  <Link href="/" className="header-logo">
+                    <h1>🏰 Medieval Stories</h1>
+                    <p>Generate tales from the Middle Ages</p>
+                  </Link>
                 </div>
               </div>
             </header>
             <main className="main-content">
               <div className="container">{children}</div>
             </main>
+            <FloatingActionButton />
           </div>
         </StoreProvider>
       </body>

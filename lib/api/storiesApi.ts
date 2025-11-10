@@ -15,9 +15,15 @@ export type StoryRequest = {
 
 export type StoryResponse = {
   id: number;
-  story: string;
+  story_text: string;
   created_at: string;
 };
+
+export interface GenerateStoryResponse {
+  id: number;
+  story: string;
+  created_at: string;
+}
 
 export type StoriesListResponse = {
   items: StoryResponse[];
@@ -43,7 +49,7 @@ export const storiesApi = createApi({
       }),
       providesTags: ["Story"],
     }),
-    generateStory: builder.mutation<StoryResponse, StoryRequest>({
+    generateStory: builder.mutation<GenerateStoryResponse, StoryRequest>({
       query: (storyRequest) => ({
         url: "/generate-story",
         method: "POST",
