@@ -57,7 +57,43 @@ export const storiesApi = createApi({
       }),
       invalidatesTags: ["Story"],
     }),
+    deleteStory: builder.mutation<
+      { message: string; deleted_id: number },
+      number
+    >({
+      query: (storyId) => ({
+        url: `/stories/${storyId}`,
+        method: "DELETE",
+      }),
+
+      onQueryStarted: async (storyId, { dispatch, queryFulfilled }) => {
+        const patchResult = dispatch(
+          storiesApi.util.updateQueryData(
+            "getStories",
+            { skip: 0, limit: 10 },
+            (draft) => {
+              if (draft?.items) {
+                draft.items = draft.items.filter(
+                  (story) => story.id !== storyId
+                );
+                draft.total -= 1;
+              }
+            }
+          )
+        );
+        try {
+          await queryFulfilled;
+        } catch {
+          patchResult.undo();
+        }
+      },
+      invalidatesTags: ["Story"],
+    }),
   }),
 });
 
-export const { useGenerateStoryMutation, useGetStoriesQuery } = storiesApi;
+export const {
+  useGenerateStoryMutation,
+  useGetStoriesQuery,
+  useDeleteStoryMutation,
+} = storiesApi;
