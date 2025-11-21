@@ -1,0 +1,53 @@
+.errorContainer {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.errorMessageText {
+  color: var(--red-800);
+  margin-bottom: 1rem;
+}
+
+.list {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--amber-900);
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+.info {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+}
+
+.empty {
+  text-align: center;
+  padding: 3rem 0;
+  color: var(--gray-500);
+}

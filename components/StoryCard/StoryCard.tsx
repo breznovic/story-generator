@@ -1,6 +1,10 @@
 import { useState } from "react";
-import { StoryResponse, useDeleteStoryMutation } from "../lib/api/storiesApi";
-import ConfirmationModal from "./ConfirmationModal";
+import {
+  StoryResponse,
+  useDeleteStoryMutation,
+} from "../../lib/api/storiesApi";
+import ConfirmationModal from "../ConfirmationModal/ConfirmationModal";
+import s from "./StoryCard.module.css";
 
 interface StoryCardProps {
   story: StoryResponse;
@@ -31,10 +35,10 @@ export default function StoryCard({ story }: StoryCardProps) {
 
   return (
     <>
-      <div className="story-card">
-        <div className="story-card-header">
-          <span className="story-id">#{story.id}</span>
-          <span className="story-meta">
+      <div className={s.card}>
+        <div className={s.header}>
+          <span className={s.id}>#{story.id}</span>
+          <span className={s.meta}>
             {new Date(story.created_at).toLocaleDateString()}
           </span>
           <button

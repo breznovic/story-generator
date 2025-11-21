@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { useGetStoriesQuery } from "../lib/api/storiesApi";
-import StoryCard from "./StoryCard";
+import { useGetStoriesQuery } from "../../lib/api/storiesApi";
+import StoryCard from "../StoryCard/StoryCard";
+import s from "./StoriesList.module.css";
 
 const ITEMS_PER_PAGE = 10;
 
@@ -29,8 +30,8 @@ export default function StoriesList() {
 
   if (error) {
     return (
-      <div className="error-container">
-        <div className="error-message-text">Failed to load stories</div>
+      <div className={s.errorContainer}>
+        <div className={s.errorMessageText}>Failed to load stories</div>
         <button
           onClick={() => refetch()}
           className="btn btn-primary retry-button"
@@ -42,9 +43,9 @@ export default function StoriesList() {
   }
 
   return (
-    <div className="stories-list">
-      <div className="stories-header">
-        <h2 className="stories-title">Historical Stories</h2>
+    <div className={s.list}>
+      <div className={s.header}>
+        <h2 className={s.title}>Historical Stories</h2>
         <button
           onClick={() => refetch()}
           disabled={isLoading}
@@ -60,14 +61,14 @@ export default function StoriesList() {
         </div>
       ) : (
         <>
-          <div className="stories-grid">
+          <div className={s.grid}>
             {data?.items.map((story) => (
               <StoryCard key={story.id} story={story} />
             ))}
           </div>
 
           {data && data.items.length > 0 && (
-            <div className="pagination">
+            <div className={s.pagination}>
               <button
                 onClick={handlePrevious}
                 disabled={skip === 0}
@@ -76,7 +77,7 @@ export default function StoriesList() {
                 Previous
               </button>
 
-              <span className="page-info">
+              <span className={s.info}>
                 Page {currentPage} of {totalPages}
               </span>
 
@@ -91,7 +92,7 @@ export default function StoriesList() {
           )}
 
           {data?.items.length === 0 && (
-            <div className="empty-state">
+            <div className={s.empty}>
               No stories generated yet. Create your first story!
             </div>
           )}

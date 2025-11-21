@@ -1,0 +1,140 @@
+.card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--amber-200);
+  padding: 1.5rem;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--amber-900);
+  margin-bottom: 0.5rem;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formSelect {
+  width: 100%;
+  padding: 0.55rem;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  background: var(--white);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.formSelect:focus {
+  outline: none;
+  border-color: var(--amber-500);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+}
+
+.formLabel {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gray-700);
+  margin-bottom: 0.5rem;
+}
+
+.socialClassGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.socialClassButton {
+  padding: 0.35rem;
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.socialClassButton:hover {
+  border-color: var(--amber-300);
+}
+
+.socialClassButton.active {
+  border-color: var(--amber-500);
+  background: var(--amber-50);
+  color: var(--amber-900);
+}
+
+.socialClassEmoji {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.socialClassLabel {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.checkBoxGroup {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  color: var(--amber-600);
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.result {
+  margin-top: 1.2rem;
+  padding: 1.2rem;
+  background: var(--amber-50);
+  border: 1px solid var(--amber-200);
+  border-radius: var(--radius-md);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--amber-900);
+}
+
+.date {
+  font-size: 0.775rem;
+  color: var(--amber-700);
+  background: var(--amber-100);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.content {
+  color: var(--gray-800);
+  line-height: 1.4;
+  white-space: pre-line;
+}
+
+@media (min-width: 768px) {
+  .socialClassGrid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

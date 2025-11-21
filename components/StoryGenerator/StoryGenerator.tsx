@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { useGenerateStoryMutation } from "../lib/api/storiesApi";
-import type { SocialClass } from "../lib/api/storiesApi";
+import type { SocialClass } from "../../lib/api/storiesApi";
+import { useGenerateStoryMutation } from "../../lib/api/storiesApi";
+import s from "./StoryGenerator.module.css";
 
 const REGIONS = [
   "England",
@@ -55,38 +56,38 @@ export default function StoryGenerator() {
   };
 
   return (
-    <div className="card">
+    <div className={s.card}>
       <h2>Generate New Story</h2>
 
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label className="form-label">Social Class</label>
-          <div className="social-class-grid">
+        <div className={s.formGroup}>
+          <label className={s.formLabel}>Social Class</label>
+          <div className={s.socialClassGrid}>
             {SOCIAL_CLASSES.map((sc) => (
               <button
                 key={sc.value}
                 type="button"
                 onClick={() => setSocialClass(sc.value)}
-                className={`social-class-button ${
-                  socialClass === sc.value ? "active" : ""
+                className={`${s.socialClassButton} ${
+                  socialClass === sc.value ? s.active : ""
                 }`}
               >
-                <div className="social-class-emoji">{sc.emoji}</div>
-                <div className="social-class-label">{sc.label}</div>
+                <div className={s.socialClassEmoji}>{sc.emoji}</div>
+                <div className={s.socialClassLabel}>{sc.label}</div>
               </button>
             ))}
           </div>
         </div>
 
-        <div className="form-group">
-          <label htmlFor="region" className="form-label">
+        <div className={s.formGroup}>
+          <label htmlFor="region" className={s.formLabel}>
             Region
           </label>
           <select
             id="region"
             value={region}
             onChange={(e) => setRegion(e.target.value)}
-            className="form-select"
+            className={s.formSelect}
           >
             {REGIONS.map((region) => (
               <option key={region} value={region}>
@@ -96,20 +97,20 @@ export default function StoryGenerator() {
           </select>
         </div>
 
-        <div className="form-group">
-          <div className="checkbox-group">
+        <div className={s.formGroup}>
+          <div className={s.checkBoxGroup}>
             <input
               id="includeConflict"
               type="checkbox"
               checked={includeConflict}
               onChange={(e) => setIncludeConflict(e.target.checked)}
-              className="checkbox"
+              className={s.checkbox}
             />
             <label htmlFor="includeConflict">Include historical conflict</label>
           </div>
         </div>
 
-        <div className="button-group">
+        <div className={s.buttonGroup}>
           <button
             type="submit"
             disabled={isLoading}
@@ -134,14 +135,14 @@ export default function StoryGenerator() {
       )}
 
       {story && (
-        <div className="story-result">
-          <div className="story-header">
-            <h3 className="story-title">Your Story</h3>
-            <span className="story-date">
+        <div className={s.result}>
+          <div className={s.header}>
+            <h3 className={s.title}>Your Story</h3>
+            <span className={s.date}>
               {new Date(story.created_at).toLocaleDateString()}
             </span>
           </div>
-          <p className="story-content">{story.story}</p>
+          <p className={s.content}>{story.story}</p>
         </div>
       )}
     </div>

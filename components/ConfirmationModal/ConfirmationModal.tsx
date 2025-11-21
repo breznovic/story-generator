@@ -1,5 +1,7 @@
 "use client";
 
+import s from "./ConfirmationModal.module.css";
+
 type ConfirmationModalProps = {
   isOpen: boolean;
   onClose: () => void;
@@ -37,18 +39,18 @@ export default function ConfirmationModal({
 
   return (
     <div
-      className="modal-overlay"
+      className={s.modalOverlay}
       onClick={handleOverlayClick}
       onKeyDown={handleKeyDown}
     >
-      <div className="modal" role="dialog" aria-labelledby="modal-title">
-        <div className="modal-header">
-          <h3 id="modal-title" className="modal-title">
+      <div className={s.modal} role="dialog" aria-labelledby="modal-title">
+        <div className={s.modalHeader}>
+          <h3 id="modal-title" className={s.modalTitle}>
             {title}
           </h3>
           <button
             onClick={onClose}
-            className="modal-close-btn"
+            className={s.modalCloseBtn}
             disabled={isProcessing}
             aria-label="Close modal"
           >
@@ -56,11 +58,11 @@ export default function ConfirmationModal({
           </button>
         </div>
 
-        <div className="modal-body">
+        <div className={s.modalBody}>
           <p>{message}</p>
         </div>
 
-        <div className="modal-footer">
+        <div className={s.modalFooter}>
           <button
             onClick={onClose}
             className="btn btn-secondary"
